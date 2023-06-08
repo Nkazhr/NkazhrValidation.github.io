@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="cobalagi.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Validation html Priyanka</title>
+</head>
+<body>
+	<h2>Validation HTML</h2>
+	<div class="container">
+	<div class="form-group">	
+	<form action="#" method="POST">
+	<div class="row">
+      <div class="col-25">
+	<label for="nama">Nama :</label>
+		</div>
+		<div class="col-75">
+	<input type="text" id="nama" name="nama" placeholder="Isikan Nama Anda" required pattern="[A-Za-z]{2,}">
+		</div>
+	</div>
+	<div class="row">
+      <div class="col-25">
+	<label for="usia">Usia :</label>
+	</div>
+	<div class="col-75">
+	<input type="number" id="usia" name="usia" min="17" max="30" required> <label>(Usia min 17-30)</label>
+	</div>
+	</div>
+	<div class="row">
+      <div class="col-25">
+	<label for="email">Email :</label>
+	</div>
+		<div class="col-75">
+	<input type="email" id="email" name="email" placeholder="nama_email@host.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+	</div>
+	</div>
+	<div class="row">
+      <div class="col-25">
+	<label for="web">Web :</label>
+	</div>
+	<div class="col-75">
+	<input type="url" id="web" name="web" placeholder="http://" required pattern="^(http|https):\/\/[a-z0-9\-\.]+(\.[a-z]{2,3}){1,2}(:[0-9]{1,5})?(\/.*)?$">
+	</div>
+	</div>
+	<div class="row">
+      <div class="col-25">
+	<label for="password">Password :</label>
+	</div>
+	<div class="col-75">
+	<input type="password" id="password" name="password" placeholder="Semua Karakter, min 8" required pattern=".{8,}" title="Password must be at least 8 characters long"> <label>(Bonus)</label>
+	</div>
+	</div>
+	<div class="row">
+      <input type="submit" value="Submit">
+    </div>
+	</form>	
+</div>
+
+</body>
+</html>
